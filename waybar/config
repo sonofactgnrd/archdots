@@ -1,0 +1,43 @@
+{
+  "layer": "top",
+  "position": "floating", 
+  "margin-top": 5,
+  "margin-bottom": 5,
+  "margin-left": 10,
+  "margin-right": 10,
+  "modules-left": ["network"],
+  "modules-center": ["clock"],
+  "modules-right": ["pulseaudio", "temperature", "battery"],
+
+  "clock": {
+    "tooltip": false,
+    "format": "{:%I:%M %p}",
+    "format-alt": "{:%A, %B %d, %Y}"
+    },
+  "network": {
+    "format": "  {icon} {essid}",
+    "format-alt": "{ipaddr}/{cidr}",
+    "tooltip-format": "Interface: {ifname}\nSignal: {signalStrength}%"
+  },
+  "temperature": {
+    "tooltip": true,
+    "format": "  {temperatureC}°C"
+  },
+  "pulseaudio": {
+    "format": "  {icon} {volume}%",
+    "format-muted": " Muted",
+  },
+    "battery": {
+      "states": {
+        "warning": 30,
+        "critical": 15
+      },
+      "format": "{icon}  {capacity}%",
+      "format-full": "{icon}  {capacity}%",
+      "format-charging": " {capacity}%",
+      "format-plugged": " {capacity}%",
+      "format-alt": "{time} {icon}",
+      "format-icons": ["󰁺", "󰁽", "󰂀", "󰂂", "󰁹"]
+    },
+}
+

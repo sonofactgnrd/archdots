@@ -1,0 +1,35 @@
+* {
+    font-family: "JetBrainsMono Nerd Font",
+    "FontAwesome",
+    "sans-serif";
+    font-size: 12px;
+    min-height: 0;
+}
+
+#waybar {
+    background: #282A36;
+    border: 2px solid #BD93F9;
+    border-radius: 12px;
+    color: #ffffff;
+}
+
+#clock, #network, #temperature, #pulseaudio, #battery {
+    padding: 5px 10px;
+}
+
+
+#network {
+    color: #8BE9FD;
+}
+
+#pulseaudio {
+    color: #FFB86C;
+}
+
+#temperature {
+    color: #FFB86C;
+}
+
+#battery {
+    color: #FFB86C;
+}
